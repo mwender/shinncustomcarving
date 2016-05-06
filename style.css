@@ -93,6 +93,22 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-t-edge{
+	background: top no-repeat;
+}
+.bg-l-edge{
+	background: left no-repeat;
+}
+
+
 /* Background Effects */
 
 .b-parallax{
@@ -204,10 +220,21 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 #about h3{
 	font-weight: 100;
-	font-family: Droid Serif;
+	font-family: 'Droid Serif';
+	font-size: 28px;
 }
 #about p{
-	font-family: Droid Serif;
+	font-family: 'Droid Serif';
+	font-size: 18px;
+}
+#gallery h2{
+	font-size: 38px;
+}
+#gallery p{
+	font-size: 18px;
+}
+#contact p{
+	font-size: 18px;
 }
 
 /* = NavBar
@@ -371,6 +398,10 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -378,6 +409,18 @@ nav .caret{
 .mg-lg{
 	margin-top:10px;
 	margin-bottom:40px;
+}
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
 }
 
 /* = Buttons
@@ -414,6 +457,16 @@ button{
 .dropdown a .caret{
 	margin:0 0 0 5px}
 
+/*  Rounded Image */
+.img-rd{
+	border-radius:6px;
+}
+.img-rd-md{
+	border-radius:20px;
+}
+.img-rd-lg{
+	border-radius:34px;
+}
 
 
 
