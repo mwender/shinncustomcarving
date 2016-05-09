@@ -92,6 +92,10 @@ module.exports = function(grunt) {
           {
             from: "<link rel='stylesheet' href='./css/linecons.min.css'/>",
             to: ''
+          },
+          {
+            from: 'data-caption="Image description"',
+            to: ''
           }
         ]
       }
