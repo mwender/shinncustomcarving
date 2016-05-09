@@ -28,7 +28,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Site container width */
 
 .container{
-	max-width:1170px;
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 /* = Blocs
@@ -377,6 +379,10 @@ nav .caret{
 }
 .hero .btn-dwn:hover{
 	color: rgba(255,255,255,1);
+}
+.hero .hero-nav{
+	padding-left:inherit;
+	padding-right:inherit;
 }
 /* = Sticky Nav
 -------------------------------------------------------------- */
