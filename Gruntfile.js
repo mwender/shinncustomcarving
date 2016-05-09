@@ -96,6 +96,10 @@ module.exports = function(grunt) {
           {
             from: 'data-caption="Image description"',
             to: ''
+          },
+          {
+            from: "href='http://fonts.googleapis.com/",
+            to: "href='//fonts.googleapis.com/"
           }
         ]
       }
