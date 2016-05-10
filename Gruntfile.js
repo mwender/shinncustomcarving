@@ -100,6 +100,10 @@ module.exports = function(grunt) {
           {
             from: "href='http://fonts.googleapis.com/",
             to: "href='//fonts.googleapis.com/"
+          },
+          {
+            from: /\?[a-z0-9]+/ig,
+            to: ''
           }
         ]
       }
@@ -111,20 +115,11 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         }
-      },
-      blocs:{
-        files: ['style.css'],
-        tasks: ['newer:copy','replace','concat','less:production'],
-        options: {
-          livereload: true
-        }
       }
     }
   });
 
-  grunt.registerTask( 'copyfiles', ['copy']);
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('setup', ['replace','concat']);
-  grunt.registerTask('build', ['copy', 'concat', 'replace', 'cacheBust','less:production']);
-  grunt.registerTask('builddev', ['less:development']);
+  grunt.registerTask('build', ['copy', 'concat', 'replace', 'cacheBust', 'less:production']);
+  grunt.registerTask('buildcss', ['less:production']);
 };
