@@ -98,10 +98,6 @@ module.exports = function(grunt) {
             to: ''
           },
           {
-            from: "href='http://fonts.googleapis.com/",
-            to: "href='//fonts.googleapis.com/"
-          },
-          {
             from: /\?[a-z0-9]+/ig,
             to: ''
           }
